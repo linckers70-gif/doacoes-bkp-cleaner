@@ -50,8 +50,14 @@ label{display:block;margin:13px 0 7px;font-size:11px;color:#c1cde0;font-weight:7
 </article></div></section></main>
 <footer class="footer"><div class="footer-inner"><span>© <span id="year"></span> BKP Cleaner Pro. Feito com cuidado. 💙</span><span>Contribuições voluntárias • Privacidade • Transparência</span></div></footer></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
-
-const PIX_KEY = "COLOQUE_SUA_CHAVE_PIX_ALEATORIA_AQUI";
+/* ANTES DE PUBLICAR:
+1. Troque COLOQUE_SUA_CHAVE_PIX_ALEATORIA_AQUI pela sua chave PIX aleatória.
+2. Confirme no painel dos provedores que o domínio do site está autorizado para as duas Site Keys.
+3. Para validação real, use um backend que valide os tokens Google e Cloudflare. A verificação feita aqui é apenas visual/client-side.
+4. Nunca coloque Secret Keys no HTML. O ranking só mostra doações reais se API_URL estiver ligado a um backend confiável.
+*/
+// A chave é lida do texto visível no painel PIX. Assim, basta preencher a chave uma vez no HTML.
+const PIX_KEY = document.getElementById("pixKeyText").textContent.trim();
 const API_URL = ""; // Opcional: ex. https://seu-dominio.com/api, para o ranking real.
 let selectedAmount=10;
 const buttons=[...document.querySelectorAll(".amount")],input=document.getElementById("customAmount"),toast=document.getElementById("toast");
