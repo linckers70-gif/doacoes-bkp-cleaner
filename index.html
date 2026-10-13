@@ -1,72 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Não Encontrado : (</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 500px;
-        }
-        .error-code {
-            font-size: 120px;
-            font-weight: 900;
-            color: #3b82f6;
-            line-height: 1;
-            margin-bottom: 10px;
-        }
-        .error-title {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #1e293b;
-        }
-        .error-message {
-            font-size: 16px;
-            color: #64748b;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-        .btn-home {
-            display: inline-block;
-            background-color: #3b82f6;
-            color: #ffffff;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.2s ease;
-        }
-        .btn-home:hover {
-            background-color: #2563eb;
-        }
-    </style>
-</head>
-<body>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080d18">
+<title>Apoie o BKP Cleaner Pro</title>
+<meta name="description" content="Ajude o BKP Cleaner Pro a continuar evoluindo.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<style>
+:root{color-scheme:dark;--bg:#080d18;--panel:#101b2d;--line:#263750;--text:#f3f7ff;--muted:#a6b5cd;--blue:#31a8ff;--green:#12e6a0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:radial-gradient(ellipse at 15% 0%,#1476ff29,transparent 38%),radial-gradient(ellipse at 90% 25%,#00dea01b,transparent 34%),var(--bg);min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(black,transparent 85%)}
+.container{width:min(1100px,calc(100% - 32px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid #ffffff16}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;letter-spacing:-.04em}.logo{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#22aaff,#12e6a0);color:#071525;font-size:23px;box-shadow:0 0 26px #16aaff30}.brand em{font-style:normal;color:var(--green)}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.08em;border:1px solid #ffffff20;border-radius:99px;padding:9px 12px;color:#c5d4eb}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:35px;padding:66px 0 45px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid #12e6a03b;border-radius:99px;background:#12e6a010;color:#9bf2d7;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 #12e6a0a0;animation:pulse 2s infinite}
+h1{font-size:clamp(38px,5vw,64px);line-height:1.03;letter-spacing:-.06em;margin:22px 0 17px}.gradient{background:linear-gradient(100deg,#fff,#78caff 50%,#20e6a3);color:transparent;background-clip:text}.lead{color:var(--muted);font-size:16px;line-height:1.8;max-width:590px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:14px 19px;border:0;border-radius:13px;text-decoration:none;font:800 13px Inter,Arial;cursor:pointer;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px)}.primary{background:linear-gradient(110deg,#16dfa0,#83ffd0);color:#03160f;box-shadow:0 12px 32px #12e6a025}.secondary{background:#ffffff08;border:1px solid #ffffff1c;color:var(--text)}.trust{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px;font-size:11px;color:#92a6c5}
+.visual{min-height:330px;display:grid;place-items:center;position:relative}.glow{position:absolute;width:240px;height:240px;border-radius:50%;background:#087dff30;filter:blur(38px);animation:breathe 4s infinite}.orbit{position:absolute;width:310px;max-width:90%;aspect-ratio:1;border:1px solid #31a8ff35;border-radius:50%;animation:spin 30s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 15px var(--green)}.orbit:before{top:15%;left:13%}.orbit:after{right:11%;bottom:14%;background:var(--blue);box-shadow:0 0 15px var(--blue)}
+.art{position:relative;width:205px;height:205px;border-radius:45px;display:grid;place-items:center;background:linear-gradient(145deg,#193553,#0d1729);border:1px solid #4ab5ff65;box-shadow:inset 0 1px #ffffff20,0 30px 70px #0008;transform:rotate(-5deg);animation:float 5s ease-in-out infinite}.art:after{content:"";position:absolute;inset:11px;border:1px solid #ffffff14;border-radius:35px}.heart{font-size:80px;filter:drop-shadow(0 0 18px #12e6a06b);animation:heart 2.5s infinite}.chip{position:absolute;padding:12px 14px;border:1px solid #ffffff1d;border-radius:13px;background:#0e1b2df0;box-shadow:0 15px 40px #0006;font-size:11px;color:#b8cbe6;animation:float 5s ease-in-out infinite}.chip b{display:block;color:white;font-size:14px;margin-top:5px}.chip.one{top:12%;left:0}.chip.two{bottom:10%;right:0;animation-delay:-2s}
+.section{padding:35px 0 68px}.section-head{text-align:center;margin-bottom:26px}.kicker{color:var(--green);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.14em}h2{font-size:clamp(27px,3vw,38px);letter-spacing:-.045em;margin:10px 0}.section-head p{max-width:610px;margin:auto;color:var(--muted);line-height:1.7;font-size:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:19px}.card{position:relative;padding:25px;border-radius:22px;background:linear-gradient(145deg,#101c2fee,#0b1322f5);border:1px solid #ffffff17;box-shadow:0 20px 60px #0002;overflow:hidden}.card:before{content:"";position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,#31a8ff80,transparent)}.card h3{font-size:18px;margin:0 0 9px}.card p{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 17px}.amounts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0}.amount{border:1px solid #ffffff1d;background:#ffffff05;color:#dce8fa;padding:13px 6px;border-radius:12px;font-weight:800;cursor:pointer}.amount:hover,.amount.active{border-color:var(--green);background:#12e6a015;color:#8bffd4;box-shadow:0 0 0 3px #12e6a00c}
+label{display:block;margin:13px 0 7px;font-size:11px;color:#c1cde0;font-weight:700}.field{display:block;width:100%;padding:13px 14px;border:1px solid #ffffff1b;border-radius:12px;background:#080f1c;color:white;font:500 13px Inter,Arial;outline:none;margin-bottom:10px}.field:focus{border-color:var(--blue);box-shadow:0 0 0 3px #31a8ff16}.captcha{padding:11px;border:1px solid #ffffff18;background:#080f1b;border-radius:12px;overflow:auto;min-height:76px;margin-bottom:12px}.captcha-note,.notice{font-size:10px;color:#8296b5;line-height:1.7}.full{width:100%}.leaderboard{display:flex;flex-direction:column;gap:9px;margin-top:16px}.empty{text-align:center;padding:28px 15px;border:1px dashed #344760;border-radius:15px;color:#a4b4cd;line-height:1.7;background:#ffffff02}.sad{font-size:30px;display:block;margin-bottom:8px}.donor{display:flex;align-items:center;gap:12px;padding:13px;border:1px solid #ffffff16;border-radius:13px;background:#ffffff04}.rank{width:37px;height:37px;flex:none;display:grid;place-items:center;border-radius:11px;background:#152640;font-weight:800}.donor-info{flex:1;min-width:0}.donor-name{font-size:12px;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.donor-date{font-size:10px;color:#8296b5;margin-top:4px}.donor-value{font-size:12px;color:var(--green);font-weight:800;white-space:nowrap}.thanks{display:flex;gap:12px;margin-top:17px;padding:16px;border:1px solid #12e6a027;border-radius:14px;background:linear-gradient(110deg,#0b9b7515,#238bff10)}.thanks .emoji{font-size:23px}.thanks strong{font-size:12px;display:block;margin-bottom:5px}.thanks p{margin:0;font-size:11px}.pix-panel{display:none;margin-top:18px;padding:18px;border:1px solid #12e6a055;border-radius:16px;background:linear-gradient(135deg,#0b9b7518,#238bff12);animation:rise .35s ease}.pix-panel.show{display:block}.pix-key{display:block;margin:12px 0;padding:14px;border:1px dashed #3b6280;border-radius:12px;background:#080f1c;color:#d9fff0;font:600 12px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}.pix-actions{display:flex;gap:9px;flex-wrap:wrap}.pix-actions .btn{flex:1;min-width:140px}.pix-warning{font-size:10px;line-height:1.7;color:#9fb1ca;margin-top:12px}.footer{border-top:1px solid #ffffff16;padding:22px 0 30px;color:#7184a2;font-size:11px;line-height:1.8}.footer-inner{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#15263a;border:1px solid #3a5577;color:white;padding:13px 17px;border-radius:12px;z-index:99;box-shadow:0 15px 50px #0008;transition:.25s;font-size:12px;max-width:calc(100% - 28px)}.toast.show{opacity:1;transform:translate(-50%,0)}
+@keyframes pulse{to{box-shadow:0 0 0 9px #12e6a000}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes breathe{50%{opacity:.5;transform:scale(1.12)}}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -9px}}@keyframes heart{50%{transform:scale(1.09)}}
+@media(max-width:780px){.hero{grid-template-columns:1fr;padding-top:42px;gap:5px}.visual{min-height:285px;order:-1}.art{width:170px;height:170px}.heart{font-size:66px}.orbit{width:255px}.grid{grid-template-columns:1fr}.chip.one{left:3%}.chip.two{right:3%}}@media(max-width:430px){.container{width:calc(100% - 24px)}.brand{font-size:13px}.logo{width:36px;height:36px}.tag{max-width:130px;text-align:center;font-size:9px}.card{padding:18px}.chip{padding:10px;font-size:10px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style></head>
+<body><div class="container">
+<header class="nav"><a class="brand" href="#"><span class="logo">✦</span><span>BKP CLEANER <em>PRO</em></span></a><span class="tag">❤️ Apoie o projeto</span></header>
+<main>
+<section class="hero"><div><span class="eyebrow"><span class="dot"></span> O projeto cresce com você</span><h1>Ajude o BKP Cleaner <span class="gradient">a evoluir.</span></h1><p class="lead">Sua contribuição ajuda a financiar melhorias, testes e novas funcionalidades. Cada apoio faz diferença — seja pequeno ou grande.</p><div class="actions"><a class="btn primary" href="#doar">❤️ Quero apoiar →</a><a class="btn secondary" href="#top-doadores">Ver apoiadores ↓</a></div><div class="trust"><span>✓ Apoio voluntário</span><span>✓ Gratidão de verdade</span><span>✓ Transparência</span></div></div>
+<div class="visual" aria-hidden="true"><div class="glow"></div><div class="orbit"></div><div class="art"><span class="heart">💚</span></div><div class="chip one">Comunidade<b>Faz a diferença</b></div><div class="chip two">BKP Cleaner Pro<b>Em evolução ↗</b></div></div></section>
+<section class="section" id="doar"><div class="section-head"><span class="kicker">Faça parte</span><h2>Seu apoio impulsiona o projeto</h2><p>Escolha um valor e continue pelo método de contribuição oficial configurado pelo responsável pelo site.</p></div>
+<div class="grid"><article class="card"><h3>💚 Faça uma contribuição</h3><p>Obrigado por considerar apoiar o BKP Cleaner Pro. Você pode escolher um valor sugerido ou informar outro.</p>
+<div class="amounts"><button type="button" class="amount" data-amount="5">R$ 5</button><button type="button" class="amount active" data-amount="10">R$ 10</button><button type="button" class="amount" data-amount="25">R$ 25</button></div>
+<label for="customAmount">Outro valor (R$)</label><input class="field" id="customAmount" type="number" min="1" max="10000" step=".01" placeholder="Ex.: 15,00">
+<label for="donorName">Nome ou apelido (opcional)</label><input class="field" id="donorName" maxlength="40" placeholder="Como podemos agradecer?">
+<div><label>Verificação Google reCAPTCHA</label><div class="captcha"><div class="g-recaptcha" data-sitekey="6LcJUewtAAAAABkq6K_ja7SACnMI2I3KYUlR72UN" data-theme="dark"></div></div></div>
+<div><label>Verificação Cloudflare Turnstile</label><div class="captcha"><div class="cf-turnstile" data-sitekey="0x4AAAAAAFVFY2Zpl3LZrvVa" data-theme="dark"></div></div></div>
+<button class="btn primary full" id="donateBtn" type="button">Mostrar chave PIX 🔐</button>
+<div class="pix-panel" id="pixPanel" aria-live="polite">
+  <h3 style="margin:0 0 6px">💚 Sua chave PIX está pronta</h3>
+  <p style="margin:0;color:#a9bad2;font-size:12px;line-height:1.7">Copie a chave abaixo e abra o aplicativo do seu banco para fazer a transferência.</p>
+  <span class="pix-key" id="pixKeyText">c51356e6-018a=49ac-8034-dffed49fe9e4</span>
+  <div class="pix-actions"><button class="btn primary" type="button" id="copyPixBtn">📋 Copiar chave PIX</button><button class="btn secondary" type="button" id="hidePixBtn">Ocultar chave</button></div>
+  <p class="pix-warning">Confira o nome do destinatário e os dados no aplicativo do banco antes de confirmar. Mostrar esta tela não confirma que uma doação foi paga.</p>
+</div>
+<p class="notice">Importante: este HTML verifica se os widgets foram concluídos no navegador. Para segurança real, um servidor deve validar os tokens dos dois captchas. Nunca coloque Secret Keys no HTML.</p></article>
+<article class="card" id="top-doadores"><h3>🏆 Top 3 apoiadores</h3><p>Um agradecimento especial às pessoas que ajudam o projeto a continuar.</p><div class="leaderboard" id="leaderboard" aria-live="polite"><div class="empty"><span class="sad">🥹</span><strong>Ninguém doou ainda :(</strong><br>Você pode ser a primeira pessoa a apoiar o BKP Cleaner Pro.</div></div>
+<div class="thanks"><span class="emoji">💌</span><div><strong>Obrigado por apoiar! De verdade.</strong><p>Cada contribuição é recebida com gratidão e ajuda o BKP Cleaner Pro a continuar melhorando. Sua confiança é muito importante para nós.</p></div></div>
+<div class="thanks"><span class="emoji">🎁</span><div><strong>Uma chance especial para os 3 primeiros</strong><p>Os três primeiros doadores poderão ter a chance de receber o BKP Cleaner Pro Pro gratuitamente quando essa edição estiver disponível. É uma possibilidade, não uma garantia; os critérios serão divulgados com transparência.</p></div></div>
+</article></div></section></main>
+<footer class="footer"><div class="footer-inner"><span>© <span id="year"></span> BKP Cleaner Pro. Feito com cuidado. 💙</span><span>Contribuições voluntárias • Privacidade • Transparência</span></div></footer></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
 
-    <div class="container">
-        <div class="error-code">404</div>
-        <h1 class="error-title">Not Found :(</h1>
-        <p class="error-message">Ops! A página que você está procurando não foi encontrada ou foi movida para outro endereço.</p>
-        <a href="/" class="btn-home">Voltar para o Início</a>
-    </div>
-
-</body>
-</html>
+const PIX_KEY = "COLOQUE_SUA_CHAVE_PIX_ALEATORIA_AQUI";
+const API_URL = ""; // Opcional: ex. https://seu-dominio.com/api, para o ranking real.
+let selectedAmount=10;
+const buttons=[...document.querySelectorAll(".amount")],input=document.getElementById("customAmount"),toast=document.getElementById("toast");
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("pixKeyText").textContent=PIX_KEY;
+function notify(msg){toast.textContent=msg;toast.classList.add("show");clearTimeout(notify.timer);notify.timer=setTimeout(()=>toast.classList.remove("show"),4200)}
+buttons.forEach(b=>b.addEventListener("click",()=>{selectedAmount=Number(b.dataset.amount);input.value="";buttons.forEach(x=>x.classList.toggle("active",x===b))}));
+input.addEventListener("input",()=>{if(input.value.trim())buttons.forEach(b=>b.classList.remove("active"))});
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function renderTop(donors){const box=document.getElementById("leaderboard");if(!Array.isArray(donors)||!donors.length){box.innerHTML='<div class="empty"><span class="sad">🥹</span><strong>Ninguém doou ainda :(</strong><br>Você pode ser a primeira pessoa a apoiar o BKP Cleaner Pro.</div>';return}box.innerHTML=donors.slice(0,3).map((d,i)=>`<div class="donor"><div class="rank">${["🥇","🥈","🥉"][i]}</div><div class="donor-info"><div class="donor-name">${esc(d.name||"Apoiador anônimo")}</div><div class="donor-date">${esc(d.dateLabel||"Apoiador do BKP Cleaner Pro")}</div></div><div class="donor-value">${new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL"}).format(Number(d.amount)||0)}</div></div>`).join("")}
+async function loadTop(){if(!API_URL)return;try{const r=await fetch(API_URL.replace(/\/$/,"")+"/donors/top3");if(!r.ok)throw Error();const data=await r.json();renderTop(data.donors)}catch(e){console.warn("Top de doadores indisponível; exibindo estado vazio até receber dados reais.")}}
+document.getElementById("donateBtn").addEventListener("click",()=>{
+  const amount=input.value.trim()?Number(input.value):selectedAmount;
+  if(!Number.isFinite(amount)||amount<1||amount>10000){notify("Informe um valor entre R$ 1 e R$ 10.000.");return}
+  const googleToken=window.grecaptcha?.getResponse?.()||"";
+  const turnstileToken=document.querySelector('[name="cf-turnstile-response"]')?.value||"";
+  if(!googleToken){notify("Conclua o Google reCAPTCHA primeiro.");return}
+  if(!turnstileToken){notify("Conclua o Cloudflare Turnstile primeiro.");return}
+  if(!PIX_KEY||PIX_KEY==="COLOQUE_SUA_CHAVE_PIX_ALEATORIA_AQUI"){notify("Antes de publicar, coloque sua chave PIX aleatória no código.");return}
+  document.getElementById("pixPanel").classList.add("show");
+  document.getElementById("pixPanel").scrollIntoView({behavior:"smooth",block:"nearest"});
+});
+document.getElementById("copyPixBtn").addEventListener("click",async()=>{
+  try{await navigator.clipboard.writeText(PIX_KEY);notify("Chave PIX copiada! 💚")}
+  catch(e){const range=document.createRange(),el=document.getElementById("pixKeyText");range.selectNodeContents(el);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);notify("Selecione a chave e copie com Ctrl+C.")}
+});
+document.getElementById("hidePixBtn").addEventListener("click",()=>document.getElementById("pixPanel").classList.remove("show"));
+loadTop();
+</script></body></html>
