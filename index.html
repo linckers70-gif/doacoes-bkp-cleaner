@@ -43,8 +43,8 @@ label{display:block;margin:13px 0 7px;font-size:11px;color:#c1cde0;font-weight:7
   <div class="pix-actions"><button class="btn primary" type="button" id="copyPixBtn">📋 Copiar chave PIX</button><button class="btn secondary" type="button" id="hidePixBtn">Ocultar chave</button></div>
   <p class="pix-warning">Confira o nome do destinatário e os dados no aplicativo do banco antes de confirmar. Mostrar esta tela não confirma que uma doação foi paga.</p>
 </div>
-<p class="notice">Os top doadores não está funcionando.</p></article>
-<article class="card" id="top-doadores"><h3>🏆 Top 3 apoiadores</h3><p>Um agradecimento especial às pessoas que ajudam o projeto a continuar.</p><div class="leaderboard" id="leaderboard" aria-live="polite"><div class="empty"><span class="sad">🥹</span><strong>Ninguém doou ainda :(</strong><br>Você pode ser a primeira pessoa a apoiar o BKP Cleaner Pro.</div></div>
+<p class="notice">Obrigado por doar! Só de ver você aqui já fico feliz!</p></article>
+<article class="card" id="top-doadores"><h3>🏆 Top 3 apoiadores</h3><p>Um agradecimento especial às pessoas que ajudam o projeto a continuar.</p><div class="leaderboard" id="leaderboard" aria-live="polite"><div class="empty"><span class="sad">🥹</span><strong>Os top doadores não está funcionando por enquanto.</strong><br>Você pode ser a primeira pessoa a apoiar o BKP Cleaner Pro.</div></div>
 <div class="thanks"><span class="emoji">💌</span><div><strong>Obrigado por apoiar! De verdade.</strong><p>Cada contribuição é recebida com gratidão e ajuda o BKP Cleaner Pro a continuar melhorando. Sua confiança é muito importante para nós.</p></div></div>
 <div class="thanks"><span class="emoji">🎁</span><div><strong>Uma chance especial para os 3 primeiros</strong><p>Os três primeiros doadores poderão ter a chance de receber o BKP Cleaner Pro Pro gratuitamente quando essa edição estiver disponível. É uma possibilidade, não uma garantia; os critérios serão divulgados com transparência.</p></div></div>
 </article></div></section></main>
@@ -76,7 +76,7 @@ document.getElementById("donateBtn").addEventListener("click",()=>{
   const turnstileToken=document.querySelector('[name="cf-turnstile-response"]')?.value||"";
   if(!googleToken){notify("Conclua o Google reCAPTCHA primeiro.");return}
   if(!turnstileToken){notify("Conclua o Cloudflare Turnstile primeiro.");return}
-  if(!PIX_KEY||PIX_KEY==="COLOQUE_SUA_CHAVE_PIX_ALEATORIA_AQUI"){notify("Antes de publicar, coloque sua chave PIX aleatória no código.");return}
+  if(!PIX_KEY||PIX_KEY==="c51356e6-018a=49ac-8034-dffed49fe9e4"){notify("Antes de publicar, coloque sua chave PIX aleatória no código.");return}
   document.getElementById("pixPanel").classList.add("show");
   document.getElementById("pixPanel").scrollIntoView({behavior:"smooth",block:"nearest"});
 });
